@@ -1,0 +1,20 @@
+import { LightningElement } from "lwc";
+
+export default class App extends LightningElement {
+  
+  empresa="Sol";
+  cnpj="20. 574. 896/0001-36";
+  endereço="Rua Cinco, RJ";
+  produto="Lápis";
+  descrição=" instrumento de escrever, pintar, desenhar e das mais variadas coisas";
+  preço=15;
+  oferta1="Compre 3 e pague 2";
+  oferta2="Caixa com 12, pague 9";
+
+visible=false;
+mostrarMais(){
+  this.visible = !this.visible;
+
+}
+
+}
