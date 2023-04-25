@@ -1,0 +1,47 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-arround_medium">
+			<h1 class="slds-text-heading_large">
+
+				Dados da Empresa
+			</h1>
+
+			<p> Empresa: {empresa}</p>
+			<p> CNPJ: {cnpj}</p>
+			<p> Endereço: {endereço}</p>
+
+
+		</div>
+
+		<div class="slds-m-arround_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+
+				Dados do Produto
+
+			</h1>
+
+			<p> Produto: {produto}</p>
+			<p> Descrição: {descrição}</p>
+			<p> Preço: R${preço}</p>
+
+		</div>
+
+
+		<div class="slds-m-arround_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">
+
+				Promoção
+
+			</h1>
+
+			<p> Oferta1: {oferta1}</p>
+			<p> Oferta2: {oferta2}</p>
+
+		</div>
+		<lightning-button variant="success" label="Mostrar Mais" title="Alterar Visible" onclick={mostrarMais}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+
+	</lightning-card>
+</template>
